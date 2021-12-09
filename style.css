@@ -1,0 +1,299 @@
+@import url('//db.onlinewebfonts.com/c/1333b13c4f911f3160f1c2822573f70c?family=Poor+Richard');
+:root {
+    --poor-richard: "Poor Richard"; src: url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.eot");
+    font-size: 22px;
+    font-family: var(--poor-richard);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li > a,
+button > a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--poor-richard);
+}
+
+nav > ul {
+    list-style: none;
+}
+
+.header {
+    padding: 0px 40px 10px 40px;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.98);
+}
+ 
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item > a {
+    padding: 0px 0;
+    margin: 0 7px;
+    text-transform: capitalize;
+}
+
+.nav-item > a:hover {
+    border-bottom: 2px solid #ff0b0b;
+}
+
+
+
+/*Home page*/
+.welcome {
+    margin: 40px;
+}
+.welcome > h1 {
+    text-transform: uppercase;
+    color: dimgrey;
+    font-size: 10vw;
+}
+.to-website {
+    display: flex;
+    justify-content: center;
+}
+
+.to-website > p {
+    margin: 3px;
+    font-size: 4vw;
+}
+.to-website > p > b {
+    color: #ff0b0b;
+}
+
+
+
+/* Staff page */
+.staff-text {
+    margin: 0px 40px 20px 40px;
+    padding: 10px;
+    border-left: 3px solid #ff0b0b;
+}
+
+
+h1 {
+    color: #ff0b0b;
+    
+}
+
+.staff-boxes {
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+    text-align: center;
+    margin: 20px 20px;
+    max-width: 1100px;
+    
+    
+}
+
+.staff-box {
+    margin: 20px;
+    padding: 12px;
+    display: block;
+    border: 1px solid #ff0b0b;
+    border-radius: 3%;
+    box-shadow: 0.1px 0px 5px #ff0b0b;
+    
+}
+
+.staff-box:hover {
+    box-shadow: 1px 1px 19px #ff0b0b;
+}
+
+.staff-image {
+    width: 235px;
+    height: 150px;
+    border-radius: 3%;
+}
+
+div > button {
+    width: 150px;
+    background-color: rgba(248, 101, 104, 0.98);
+    border-radius: 3%;
+    border: 1px solid white;
+    height: 36px;
+}
+
+.staff-butt:hover {
+    background-color: #ff0b0b;
+}
+
+button > a {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+
+
+/*About page*/
+.about {
+    display: flex;
+    
+    margin: 10px 70px;
+   
+}
+
+.about-text {
+   
+    padding: 30px;
+    background-image: url(./assets/clinic.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.about-text > h1 {
+    text-align: left;
+}
+
+.about-text > p {
+    max-width: 470px;
+    padding: 20px 0px 10px 0px;
+}
+
+
+
+/* Staff pages*/
+.staff-page {
+display: flex;
+}
+
+.staff-page-block {
+    max-width: 530px;
+    margin: 20px 80px;
+}
+
+.staff-page-text > h1 {
+    text-align: left;
+}
+
+.staff-page-list {
+    margin: 20px;
+}
+
+
+
+
+/*Contacts page*/
+.contacts {
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	
+    }
+h1 {
+    text-align: center;
+}
+
+#address p {
+    padding: 15px;
+}
+form {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ff0b0b;
+    border-radius: 5px;
+    margin: 10px;
+    height: 330px;
+
+}
+
+form input, textarea, button {
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+form > label {
+    margin: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form > button {
+    background-color: white;
+}
+
+form > button:hover {
+    color: #ff0b0b;
+    font-weight: bold;
+}
+    
+
+
+/*foot*/
+.container_footer{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: rgb(199, 35, 38);
+    padding: 20px 0;
+}
+.footer-column{
+    width: 33%;
+    padding: 0 15px;
+}
+.footer-column h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: normal;
+    position: relative;
+}
+.footer-column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-column ul li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    color: rgb(250, 201, 203) ;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-column ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+
+
+@media  (max-width: 800px) {
+    .staff-boxes, .header, .about, .staff-page, .contacts, .footer-col {
+       flex-direction: column;
+   }
+}
